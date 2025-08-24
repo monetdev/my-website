@@ -872,89 +872,7 @@
             height: 150px;
             resize: vertical;
         }
-        
-        .blog {
-            background-color: white;
-        }
-        
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .blog-card {
-            background: white;
-            border-radius: var(--radius);
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-            transform: translateY(20px);
-            opacity: 0;
-        }
-        
-        .blog-card.animate {
-            animation: fadeInUp 0.6s forwards;
-        }
-        
-        .blog-card:nth-child(1).animate { animation-delay: 0.1s; }
-        .blog-card:nth-child(2).animate { animation-delay: 0.2s; }
-        .blog-card:nth-child(3).animate { animation-delay: 0.3s; }
-        
-        .blog-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        }
-        
-        .blog-img {
-            height: 200px;
-            background-color: #f0f0f0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #999;
-            font-size: 14px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .blog-img::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, rgba(0, 102, 204, 0.3), rgba(255, 102, 0, 0.3));
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        
-        .blog-card:hover .blog-img::before {
-            opacity: 1;
-        }
-        
-        .blog-content {
-            padding: 20px;
-        }
-        
-        .blog-date {
-            font-size: 14px;
-            color: var(--primary);
-            margin-bottom: 10px;
-        }
-        
-        .blog-title {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: var(--dark);
-        }
-        
-        .blog-excerpt {
-            margin-bottom: 15px;
-            color: #666;
-        }
-        
+
         .cta {
             background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 102, 204, 0.9)), url('https://images.unsplash.com/photo-1567538096630-e0c55bd6354f?ixlib=rb-4.0.3') no-repeat center center/cover;
             color: white;
@@ -1581,7 +1499,6 @@
                     <li><a href="#services">Hizmetlerimiz</a></li>
                     <li><a href="#products">Ürünler</a></li>
                     <li><a href="#contact">İletişim</a></li>
-                    <li><a href="#blog">Blog</a></li>
                 </ul>
             </nav>
             
@@ -1715,7 +1632,7 @@
             <div class="product-grid">
                 <!-- York Monterasa -->
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">York Monterasa 9000 BTU</div>
+                    <div class="product-img"><img src="1_org_zoom.webp" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">York Monterasa 09</h3>
@@ -1725,14 +1642,13 @@
                             <span><i class="fas fa-home"></i> 30m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="york-09">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 09" data-price="7499">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 09" data-price="7499">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">York Monterasa 12000 BTU</div>
+                    <div class="product-img"><img src="1_org_zoom.webp" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">York Monterasa 12</h3>
@@ -1742,14 +1658,13 @@
                             <span><i class="fas fa-home"></i> 40m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="york-12">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 12" data-price="9999">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 12" data-price="9999">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">York Monterasa 18000 BTU</div>
+                    <div class="product-img"><img src="1_org_zoom.webp" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">York Monterasa 18</h3>
@@ -1759,14 +1674,13 @@
                             <span><i class="fas fa-home"></i> 60m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="york-18">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 18" data-price="12499">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 18" data-price="12499">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter salon">
-                    <div class="product-img">York Monterasa 24000 BTU</div>
+                    <div class="product-img"><img src="1_org_zoom.webp" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">York Monterasa 24</h3>
@@ -1776,15 +1690,14 @@
                             <span><i class="fas fa-home"></i> 80m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="york-24">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 24" data-price="15299">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="York Monterasa 24" data-price="15299">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Olifini Irigoni -->
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">Olifini Irigoni 9000 BTU</div>
+                    <div class="product-img"><img src="110000745187003.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Olifini Irigoni 09</h3>
@@ -1794,14 +1707,13 @@
                             <span><i class="fas fa-home"></i> 30m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="olifini-09">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 09" data-price="6999">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 09" data-price="6999">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">Olifini Irigoni 12000 BTU</div>
+                    <div class="product-img"><img src="110000745187003.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Olifini Irigoni 12</h3>
@@ -1811,14 +1723,13 @@
                             <span><i class="fas fa-home"></i> 40m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="olifini-12">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 12" data-price="8999">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 12" data-price="8999">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">Olifini Irigoni 18000 BTU</div>
+                    <div class="product-img"><img src="110000745187003.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Olifini Irigoni 18</h3>
@@ -1828,14 +1739,13 @@
                             <span><i class="fas fa-home"></i> 60m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="olifini-18">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 18" data-price="11499">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 18" data-price="11499">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter salon">
-                    <div class="product-img">Olifini Irigoni 24000 BTU</div>
+                    <div class="product-img"><img src="110000745187003.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Olifini Irigoni 24</h3>
@@ -1845,15 +1755,14 @@
                             <span><i class="fas fa-home"></i> 80m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="olifini-24">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 24" data-price="14799">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Olifini Irigoni 24" data-price="14799">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Midea Xtreme Save -->
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">Midea Xtreme Save 9000 BTU</div>
+                    <div class="product-img"><img src="110000827947356.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Midea Xtreme Save 09</h3>
@@ -1863,14 +1772,13 @@
                             <span><i class="fas fa-home"></i> 30m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="midea-09">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 09" data-price="7299">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 09" data-price="7299">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">Midea Xtreme Save 12000 BTU</div>
+                    <div class="product-img"><img src="110000827947356.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Midea Xtreme Save 12</h3>
@@ -1880,14 +1788,13 @@
                             <span><i class="fas fa-home"></i> 40m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="midea-12">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 12" data-price="9499">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 12" data-price="9499">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter duvartipi">
-                    <div class="product-img">Midea Xtreme Save 18000 BTU</div>
+                    <div class="product-img"><img src="110000827947356.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Midea Xtreme Save 18</h3>
@@ -1897,14 +1804,13 @@
                             <span><i class="fas fa-home"></i> 60m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="midea-18">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 18" data-price="11999">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 18" data-price="11999">Teklif al</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="inverter salon">
-                    <div class="product-img">Midea Xtreme Save 24000 BTU</div>
+                    <div class="product-img"><img src="110000827947356.jpg" alt=""></div>
                     <div class="product-info">
                         <div class="product-category">Inverter Klima</div>
                         <h3 class="product-title">Midea Xtreme Save 24</h3>
@@ -1914,8 +1820,7 @@
                             <span><i class="fas fa-home"></i> 80m²</span>
                         </div>
                         <div class="product-actions">
-                            <a href="#" class="btn view-details" data-product="midea-24">Detaylar</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 24" data-price="15499">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="Midea Xtreme Save 24" data-price="15499">Teklif al</a>
                         </div>
                     </div>
                 </div>
@@ -2007,7 +1912,7 @@
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>E-posta</h4>
-                            <p><a href="mailto:cemulueryt@gmail.com">cemulueryt@gmail.com</a></p>
+                            <p><a href="mailto:BreezMoklima@gmail.com">BreezMoklima@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -2063,47 +1968,6 @@
         </div>
     </section>
 
-    <!-- Blog Section -->
-    <section class="blog" id="blog">
-        <div class="container">
-            <div class="section-title">
-                <h2>Blog</h2>
-                <p>Klima dünyasından en son haberler ve ipuçları</p>
-            </div>
-            
-            <div class="blog-grid">
-                <div class="blog-card">
-                    <div class="blog-img">Klima Bakımı</div>
-                    <div class="blog-content">
-                        <div class="blog-date">15 Ekim 2025</div>
-                        <h3 class="blog-title">Klima Bakımı Neden Önemlidir?</h3>
-                        <p class="blog-excerpt">Klima bakımını düzenli yaptırmanın enerji tasarrufu ve uzun ömür açısından faydalarını öğrenin.</p>
-                        <a href="#" class="btn">Devamını Oku</a>
-                    </div>
-                </div>
-                
-                <div class="blog-card">
-                    <div class="blog-img">Inverter Teknolojisi</div>
-                    <div class="blog-content">
-                        <div class="blog-date">8 Ekim 2025</div>
-                        <h3 class="blog-title">Inverter Klima Nedir?</h3>
-                        <p class="blog-excerpt">Inverter teknolojisinin nasıl çalıştığını và geleneksel klimalara göre avantajlarını keşfedin.</p>
-                        <a href="#" class="btn">Devamını Oku</a>
-                    </div>
-                </div>
-                
-                <div class="blog-card">
-                    <div class="blog-img">Enerji Tasarrufu</div>
-                    <div class="blog-content">
-                        <div class="blog-date">1 Ekim 2025</div>
-                        <h3 class="blog-title">Klima ile Enerji Tasarrufu</h3>
-                        <p class="blog-excerpt">Klima kullanırken enerji faturanızı düşürmenin 10 etkili yolu.</p>
-                        <a href="#" class="btn">Devamını Oku</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- CTA Section -->
     <section class="cta">
@@ -2138,7 +2002,6 @@
                         <li><a href="#services">Hizmetlerimiz</a></li>
                         <li><a href="#products">Ürünler</a></li>
                         <li><a href="#contact">İletişim</a></li>
-                        <li><a href="#blog">Blog</a></li>
                     </ul>
                 </div>
                 
@@ -2154,33 +2017,7 @@
                     </ul>
                 </div>
                 
-                <div class="footer-col">
-                    <h3>İletişim</h3>
-                    <ul class="contact-info">
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Atatürk Caddesi No:123 Bahçelievler/İstanbul</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <span><a href="tel:05315687694">0531 568 76 94</a></span>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <span><a href="mailto:cemulueryt@gmail.com">cemulueryt@gmail.com</a></span>
-                        </li>
-                        <li>
-                            <i class="fab fa-whatsapp"></i>
-                            <span><a href="https://wa.me/905315687694" target="_blank">0531 568 76 94</a></span>
-                        </li>
-                        <li>
-                            <i class="fas fa-clock"></i>
-                            <span>Pazartesi-Cumartesi: 08:00-19:00</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            
+              
             <div class="footer-bottom">
                 <p>&copy; 2025 KlimaServis. Tüm hakları saklıdır. | Tasarım ve Geliştirme: KlimaServis Teknoloji</p>
             </div>
@@ -2204,7 +2041,7 @@
         function sendEmail(name, email, phone, service, message) {
             const subject = `KlimaServis Teklif Talebi - ${name}`;
             const body = `Ad Soyad: ${name}%0D%0AEmail: ${email}%0D%0ATelefon: ${phone}%0D%0AHizmet: ${service}%0D%0AMesaj: ${message}`;
-            window.location.href = `mailto:cemulueryt@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+            window.location.href = `mailto:BreezMoklima@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
         }
 
         // Ürün detaylarını göster
@@ -2212,39 +2049,7 @@
             const productModal = document.getElementById('productModal');
             const productDetail = document.getElementById('productDetail');
             
-            // Ürün bilgileri (gerçek uygulamada API'den çekilebilir)
-            const products = {
-                'york-09': {
-                    name: 'York Monterasa 9000 BTU',
-                    price: '7.499 TL',
-                    image: 'York Monterasa 9000 BTU',
-                    specs: [
-                        { name: 'Kapasite', value: '9000 BTU' },
-                        { name: 'Enerji Sınıfı', value: 'A++' },
-                        { name: 'Oda Büyüklüğü', value: '30 m²' },
-                        { name: 'Inverter', value: 'Evet' },
-                        { name: 'Ses Seviyesi', value: '19 dB' },
-                        { name: 'Garanti', value: '3 Yıl' }
-                    ],
-                    description: 'York Monterasa 9000 BTU inverter klima, yüksek enerji verimliliği ve sessiz çalışma özellikleriyle öne çıkan premium bir üründür.'
-                },
-                'york-12': {
-                    name: 'York Monterasa 12000 BTU',
-                    price: '9.999 TL',
-                    image: 'York Monterasa 12000 BTU',
-                    specs: [
-                        { name: 'Kapasite', value: '12000 BTU' },
-                        { name: 'Enerji Sınıfı', value: 'A++' },
-                        { name: 'Oda Büyüklüğü', value: '40 m²' },
-                        { name: 'Inverter', value: 'Evet' },
-                        { name: 'Ses Seviyesi', value: '20 dB' },
-                        { name: 'Garanti', value: '3 Yıl' }
-                    ],
-                    description: 'York Monterasa 12000 BTU inverter klima, orta büyüklükteki mekanlar için ideal, yüksek performanslı bir klimadır.'
-                },
-                // Diğer ürünler için benzer şekilde devam edebilirsiniz
-            };
-
+       
             const product = products[productId];
             
             if (product) {
@@ -2266,7 +2071,7 @@
                         
                         <div class="product-detail-actions">
                             <a href="https://wa.me/905315687694?text=Merhaba,%20${encodeURIComponent(product.name)}%20ürünü%20hakkında%20bilgi%20almak%20istiyorum." class="btn" target="_blank">WhatsApp'tan Sorgula</a>
-                            <a href="#" class="btn btn-outline add-to-cart" data-product="${product.name}" data-price="${product.price.replace(' TL', '').replace('.', '')}">Sepete Ekle</a>
+                            <a href="#" class="btn btn-outline add-to-cart" data-product="${product.name}" data-price="${product.price.replace(' TL', '').replace('.', '')}">Teklif al</a>
                         </div>
                     </div>
                 `;
@@ -2442,8 +2247,8 @@
         
         // Animation on scroll
         const animateOnScroll = () => {
-            const elements = document.querySelectorAll('.product-card, .service-item, .feature-card, .testimonial-card, .blog-card');
-            
+            const elements = document.querySelectorAll('.product-card, .service-item, .feature-card, .testimonial-card');
+
             elements.forEach(element => {
                 const elementPosition = element.getBoundingClientRect().top;
                 const screenPosition = window.innerHeight / 1.3;
